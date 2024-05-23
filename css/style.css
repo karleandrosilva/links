@@ -25,6 +25,7 @@ body {
 main {
     width: 360px;
     margin: 55px auto 0px;
+    padding: 0 24px;
     /* border: 1px solid red; */
 }
 
