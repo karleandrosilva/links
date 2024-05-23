@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter' sans-serif;
+    color: #ffffff;
+}
+
+body {
+    /* background-image: url();
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover; */
+
+    /* forma reduzida/ em uma unica declaração - shorthand/atalho */
+    /* background: color image repeat position/size */
+    background: url(../assets/img/bg-mobile.jpg) no-repeat top center/cover;
+}
+
+main {
+    width: 360px;
+    margin: 55px auto 0px;
+    /* border: 1px solid red; */
+}
+
+#perfil {
+    text-align: center; /* (para cetralizar a foto) */
+    padding: 24px;
+}
+
+#perfil img {
+    height: 112px;
+    border-radius: 50%;
+    border: 3.5px solid white;
+    /* display: block; (para cetralizar a foto)
+    margin: auto; */
+}
+
+#perfil p {
+    padding-top: 8px;
+    font-weight: 500;
+    line-height: 24px;
+}
