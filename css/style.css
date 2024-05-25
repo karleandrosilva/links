@@ -40,13 +40,14 @@ body {
     /* forma reduzida/ em uma unica declaração - shorthand/atalho */
     /* background: color image repeat position/size */
     background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
 }
 
 main {
-    width: 360px;
+    width: 100%;
+    max-width: 588px;
     margin: 55px auto 0px;
     padding: 0 24px;
-    /* border: 1px solid red; */
 }
 
 #perfil {
@@ -87,11 +88,16 @@ main {
     left: 0;
     z-index: 1;
     transform: translateY(-50%);
+
+    animation: slide-back 0.2s;
 }
 
 .light #botao-modo button {
-    right: 0;
-    left: initial;
+    animation: slide-in 0.2s forwards;
+}
+
+#botao-modo button:hover {
+    outline: 8px solid var(--highlight-color);
 }
 
 #botao-modo span {
@@ -159,4 +165,32 @@ footer p {
     padding: 24px;
     font-size: 14px;
     text-align: center;
+}
+
+@media (min-width: 700px) {
+    :root {
+        --bg-url: url(../assets/img/bg-desktop.jpg)
+    }
+
+    .light {
+        --bg-url: url(../assets/img/bg-desktop-light.jpg)
+    }
+}
+
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+    to {
+        left: 50%
+    }
+}
+
+@keyframes slide-back {
+    from {
+        left: 50%;
+    }
+    to {
+        left: 0;
+    }
 }
