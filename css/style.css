@@ -6,8 +6,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter' sans-serif;
-    /* font-family: Arial, Helvetica, sans-serif; */
+    /* font-family: 'Inter' sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
     color: var(--text-color);
 }
 
@@ -52,7 +52,7 @@ main {
 
 #perfil {
     text-align: center; /* (para cetralizar a foto) */
-    padding: 24px;
+    padding: 20px;
 }
 
 #perfil img {
@@ -116,7 +116,7 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    padding: 24px 0;
+    padding: 20px 0;
 }
 
 ul li a {
@@ -142,7 +142,7 @@ ul li a:hover {
 #redes-sociais {
     display: flex;
     gap: 16px;
-    padding: 24px 0;
+    padding: 10px 0;
     font-size: 32px;
     justify-content: center;
 }
@@ -162,7 +162,7 @@ ul li a:hover {
 }
 
 footer p {
-    padding: 24px;
+    padding: 10px;
     font-size: 14px;
     text-align: center;
 }
