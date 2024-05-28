@@ -13,7 +13,7 @@
 
 :root {
     --text-color: white;
-    --bg-url: url(../assets/img/bg-mobile.jpg);
+    --bg-color:  rgb(18, 17, 19);
     --stroke-color: rgba(255, 255, 255, 0.5);
     --surface-color: rgba(255, 255, 255, 0.05);
     --surface-color-hover: rgba(0, 0, 0, 0.2);
@@ -23,7 +23,7 @@
 
 .light {
     --text-color: black;
-    --bg-url: url(../assets/img/bg-mobile-light.jpg);
+    --bg-color: rgb(243, 243, 236);
     --stroke-color: rgba(0, 0, 0, 0.5);
     --surface-color: rgba(0, 0, 0, 0.05);
     --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -39,8 +39,10 @@ body {
 
     /* forma reduzida/ em uma unica declaração - shorthand/atalho */
     /* background: color image repeat position/size */
-    background: var(--bg-url) no-repeat top center/cover;
+    /* background: var(--bg-url) no-repeat top center/cover; */
     height: 100vh;
+    background-color:  var(--bg-color);
+    
 }
 
 main {
@@ -49,6 +51,46 @@ main {
     margin: 55px auto 0px;
     padding: 0 24px;
 }
+
+#top {
+    z-index: -1;
+    position: fixed;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-image: linear-gradient(80deg, rgb(5, 124, 172), rgb(199, 10, 114));
+    filter: blur(70px);
+    
+    left: -5vh;
+    top: -5vh;
+}
+
+#left {
+    z-index: -1;
+    position: fixed;
+    height: 300px;
+    width: 150px;
+    border-radius: 50%;
+    background-image: linear-gradient(20deg, rgb(5, 124, 172), rgb(199, 10, 114));
+    filter: blur(70px);
+    
+    right: -5vw;
+    top: 25%;
+}
+
+#bottom {
+    z-index: -1;
+    position: fixed;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-image: linear-gradient(80deg, rgb(5, 124, 172), rgb(199, 10, 114));
+    filter: blur(70px);
+    
+    left: -10vh;
+    bottom: -20vh;
+}
+
 
 #perfil {
     text-align: center; /* (para cetralizar a foto) */
