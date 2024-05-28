@@ -209,14 +209,29 @@ footer p {
     text-align: center;
 }
 
-@media (min-width: 700px) {
-    :root {
-        --bg-url: url(../assets/img/bg-desktop.jpg)
+@media (min-width: 750px) {
+    #top {
+        display: none; 
     }
+    
+    #left {
+        height: 600px;
+        width: 500px;
+        filter: blur(80px);
 
-    .light {
-        --bg-url: url(../assets/img/bg-desktop-light.jpg)
+        right: -15vw;
+        top: 5%;
     }
+    
+    #bottom {
+        height: 500px;
+        width: 450px;
+        filter: blur(80px);
+
+        left: -20vh;
+        bottom: -20vh;
+    }
+    
 }
 
 @keyframes slide-in {
