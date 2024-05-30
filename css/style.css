@@ -52,6 +52,8 @@ main {
     padding: 0 24px;
 }
 
+/* BACKGROUND  */
+
 #top {
     z-index: -1;
     position: fixed;
@@ -91,6 +93,7 @@ main {
     bottom: -20vh;
 }
 
+/* FOTO DE PERFIL */
 
 #perfil {
     text-align: center; /* (para cetralizar a foto) */
@@ -110,6 +113,8 @@ main {
     font-weight: 500;
     line-height: 24px;
 }
+
+/* BOTÃO LIGHT E DARK */
 
 #botao-modo {
     position: relative;
@@ -152,6 +157,8 @@ main {
     -webkit-backdrop-filter: blur(4px);
     border-radius: 9999px;
 }
+
+/* LINKS */
 
 ul {
     list-style: none;
@@ -203,11 +210,15 @@ ul li a:hover {
     background: var(--highlight-color);
 }
 
+/* RODAPÉ */
+
 footer p {
     padding: 10px;
     font-size: 14px;
     text-align: center;
 }
+
+/* RESPONSIVIADE */
 
 @media (min-width: 750px) {
     #top {
